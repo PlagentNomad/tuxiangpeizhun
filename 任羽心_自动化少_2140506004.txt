@@ -1,0 +1,13 @@
+>> clear
+>> pic1 = imread('Image A.jpg');
+>> pic2 = imread('Image B.jpg');
+>> cpselect(pic2, pic1);
+变量已在基础工作区中创建。
+>> 
+>> tran = cp2tform(movingPoints,fixedPoints,'linear conformal');
+>> pic = imtransform(pic2,tran);
+>> 
+>> figure(1)
+>> subplot(1,2,1),imshow(pic)
+>> subplot(1,2,2),imshow(pic1)
+>> 
